@@ -1,0 +1,46 @@
+/* main */
+body {height:100%;margin:0;padding:0}
+
+#wrap {width:100%;margin:0;padding:0}
+
+/* header */
+#header {position:relative;width:100%;height:386px;min-height:386px;}
+
+/* header- */
+#header .header_area {position:absolute;left:50%;width:960px;margin-left:-480px;z-index:99;}
+#header .header_area .logo {float:left;padding:10px 0 0 0;} /* header-logo */
+#header .header_area #login_main {position:absolute;right:0;width:450px;text-align:right;margin-top:15px;}/* top_smenu */
+
+#header .top_area {position:absolute;float:left;width:960px;z-index:99;}
+
+/* header-메인플래시 */
+#fullscreen {width:100%;z-index:0;}
+#fullscreen .main_visual {position:absolute;top:0;left:0;width:100%;z-index:0;}
+
+/* containter */
+#container {position:relative;width:960px;margin:0 auto;margin-top:0px;margin-top:-30px;margin-bottom:15px;z-index:10;}
+#container  {*zoom:1;} /* IE5.5~7 브라우저 대응 Hack */
+#container:after {content:" "; display:block; clear:both;} /* 표준계열 브라우저에 대응하는 float 해제용 가상 엘리먼트의 생성 */ 
+
+
+/* footer */
+/*copyright*/
+#footer {background-color:#d5dde2; color:#888; text-align:center; padding: 20px;}
+
+
+/* -- navigation -- */
+#navbar {width:960px; height:30px;background-color:#03497d;left:50%;}
+#navbar ul {margin:0;padding:0;}
+#navbar ul li {float:left;}
+#navbar ul li a{
+	color:#fff; background-color:#4682b4;
+	display:block;
+	width:120px;
+	text-align:center;
+	padding:0px 10px; 
+	font: bold 12px/30px Tahoma;
+	text-decoration:none;
+	margin-right:1px;
+}
+#navbar ul li a.selected {background-color:#94c713;}
+#navbar ul li a:hover {background-color:#709647;}
