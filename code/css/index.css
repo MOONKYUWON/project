@@ -64,7 +64,7 @@ div.copyright {
 
 /* section */
 #section1 {float:left;width:200px;margin-right:40px;overflow:hidden;}
-#section2 {float:left;width:447px;margin-right:25px;overflow:hidden;}
+#section2 {float:left;width:447px;margin-right:25px;overflow:hidden; margin-top:-10;}
 #section3 {float:right;width:228px;}
 
 
@@ -87,5 +87,4 @@ div.copyright {
 
 .clsBannerScreen {overflow: hidden;position: relative;height: 130px;width: 120px; cursor:pointer; clear:both;}
 .clsBannerScreen .images {position:absolute; display:none; }
-
 
