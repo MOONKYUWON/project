@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>교수상담예약사이트</title>
+	<link type="text/css" href="css/index2.css" rel="stylesheet"/>
+	<script src="scripts.js"></script>
+
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://cfs.tistory.com/custom/blog/68/684698/skin/images/jquery.banner.js"></script>
+<script type="text/javascript">
+<!--
+
+
+$(function(){
+	$('.rollover').each(function(){
+		var a = $(this);
+		var img = a.find('img');
+		var src_off = img.attr('src');
+		var src_on = src_off.replace('_off','_on');
+		$('<img />').attr('src',src_on);
+		a.hover(function(){
+			img.attr('src',src_on);
+		},function(){
+			img.attr('src',src_off);
+		});
+	});
+});
+//-->
+</script>
+
+
+
+</head>
+
+<body bgcolor="#ffffff">
+
+	<div id="wrap">
+		<!--header-->
+		<div id="header">
+	    	<div class="header_area">
+	        	<div class="top_area">
+	            	<h1 class="logo"><img src="image/logo.gif" alt="교수상담예약사이트" /></h1>
+	                
+	                <div id="login_main" >
+	                	<a href="">
+	                		<img class="input-image" src="image/btn_login.gif" alt="로그인" />
+	                	</a>
+	                	<a href="">
+	                		<img src="image/btn_english.gif"/>
+	                	</a>
+	                </div>
+	            </div>
+	        </div>
+	        <!--메인플래시이미지-->
+	        <div id="fullscreen">
+	        	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" name="onResize_example" width="100%" height="430" align="middle" id="onResize_example">
+	        		<param name="allowScriptAccess" value="sameDomain" />
+	        		<param name="allowFullScreen" value="false" />
+	                <param name="movie" value="../site/mju/images/main/flash/main2.swf" />
+	                <param name="quality" value="high" />
+	                <param name="wmode" value="transparent" />
+	                <embed src="http://lib.mju.ac.kr/site/mju/images/main/flash/main1.swf" quality="high" wmode="transparent" width="100%" height="430" name="onResize_example" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_kr" />
+	            </object>
+	        </div>
+	        <!--//메인플래시이미지-->
+	    </div>
+	    <!--//header-->
+
+
+	   <!--containter-->
+	    <div id="container">
+	    	<div id="section1">
+		    	<!--메뉴-->
+		    	<div class="navbar">
+	        		<ul>
+	        			<li><a href="index.html" class="rollover"><img src="image/btn_0_off.png" alt="Home" title="Home" class="hover" /></a></li>
+	        			<li><a href="index1.html" class="rollover"><img src="image/btn_0_off.png" alt="공지사항" title="공지사항" class="hover" /></a></li>
+	        			<li><a href="index2.html" class="rollover"><img src="image/btn_1_off.png" alt="교수소개" title="교수소개" class="hover" /></a></li>
+			        	<li><a href="index3.html" class="rollover"><img src="image/btn_2_off.png" alt="상담예약" title="상담예약" class="hover" /></a></li>
+			        	<li><a href="index4.html" class="rollover"><img src="image/btn_3_off.png" alt="예약확인" title="예약확인" class="hover" /></a></li>
+			        </ul>
+				</div>
+				<!--//메뉴-->
+				<br>
+				<!--//배너-->
+				<div class="linklist">
+	            	<ul>
+	                	<li><a href="http://www.mju.ac.kr/mbs/mjukr/index.jsp?SWIFT_SESSION_CHK=false" target="_blank"><img src="image/banner1.gif" alt="명지대학교 바로가기" /></a></li>
+	                    <li><a href="http://cs.mju.ac.kr/" target="_blank"><img src="image/banner2.gif" alt="컴퓨터공학과 바로가기" /></a></li>
+	                    <li class="last-child"><a href="http://lib.mju.ac.kr/index.jsp" target="_blank"><img src="image/banner3.gif" alt="명지대도서관 바로가기" /></a></li>
+	                </ul>
+	            </div>
+	        </div>
+	        <!--//배너-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	        <div id="section2">
+	        	<ul class="profsList">
+
+	<li>
+		<span class="pic"><img alt="이충기" src="http://myiweb.mju.ac.kr/upload/adm/aps/19961313.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 이충기</span>
+			<span>직 책 : 주임교수</span>
+			<span>연락처 : 031-330-6780</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(19961313);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=19961313&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://home.mju.ac.kr/cklee" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,19961313);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,19961313);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="권동섭" src="http://myiweb.mju.ac.kr/upload/adm/aps/20060650.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 권동섭</span>
+			<span>직 책 : 부교수</span>
+			<span>연락처 : 031-330-6785</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(20060650);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=20060650&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://home.mju.ac.kr/dongseop" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,20060650);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,20060650);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="권세동" src="http://myiweb.mju.ac.kr/upload/adm/aps/20003228.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 권세동</span>
+			<span>직 책 : 겸임조교수</span>
+			<span>연락처 : </span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(20003228);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=20003228&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://old.mju.ac.kr/sdkwon" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		
+		<a href="javascript:jf_coursePlan(12913,20003228);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="김상균" src="http://myiweb.mju.ac.kr/upload/adm/aps/20070075.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 김상균</span>
+			<span>직 책 : 부교수</span>
+			<span>연락처 : 031-330-6443</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(20070075);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=20070075&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://uxmlab.mju.ac.kr" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,20070075);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,20070075);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="김상귀" src="http://myiweb.mju.ac.kr/upload/adm/aps/19901990.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 김상귀</span>
+			<span>직 책 : 겸임부교수</span>
+			<span>연락처 : </span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(19901990);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=19901990&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://home.mju.ac.kr/kimsk98" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		
+		<a href="javascript:jf_coursePlan(12913,19901990);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="김상운" src="http://myiweb.mju.ac.kr/upload/adm/aps/19891005.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 김상운</span>
+			<span>직 책 : 교수</span>
+			<span>연락처 : 031-330-6437</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(19891005);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=19891005&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://home.mju.ac.kr/kimsw" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,19891005);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,19891005);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="류연승" src="http://myiweb.mju.ac.kr/upload/adm/aps/20030048.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 류연승</span>
+			<span>직 책 : 교수</span>
+			<span>연락처 : 031-330-6781</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(20030048);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=20030048&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://home.mju.ac.kr/ysryu" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,20030048);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,20030048);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="박영배" src="http://myiweb.mju.ac.kr/upload/adm/aps/19811018.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 박영배</span>
+			<span>직 책 : 명예교수</span>
+			<span>연락처 : </span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(19811018);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=19811018&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://dblab.mju.ac.kr" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,19811018);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,19811018);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="박현민" src="http://myiweb.mju.ac.kr/upload/adm/aps/19961318.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 박현민</span>
+			<span>직 책 : 교수</span>
+			<span>연락처 : 031-330-6442</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(19961318);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=19961318&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://old.mju.ac.kr/hpark" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,19961318);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,19961318);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="신민호" src="http://myiweb.mju.ac.kr/upload/adm/aps/20110089.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 신민호</span>
+			<span>직 책 : 조교수</span>
+			<span>연락처 : </span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(20110089);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=20110089&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://hmcl.mju.ac.kr/~mhshin" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,20110089);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,20110089);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="신성효" src="http://myiweb.mju.ac.kr/upload/adm/aps/20050189.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 신성효</span>
+			<span>직 책 : 겸임조교수</span>
+			<span>연락처 : </span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="profile_user.jsp?empId=20050189&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://old.mju.ac.kr/mmstudy" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="윤병주" src="http://myiweb.mju.ac.kr/upload/adm/aps/19821010.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 윤병주</span>
+			<span>직 책 : 교수</span>
+			<span>연락처 : 031-330-6439</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(19821010);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=19821010&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://old.mju.ac.kr/yoonbj" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,19821010);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,19821010);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="이강선" src="http://myiweb.mju.ac.kr/upload/adm/aps/20001305.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 이강선</span>
+			<span>직 책 : 교수</span>
+			<span>연락처 : 031-330-6444</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(20001305);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=20001305&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://home.mju.ac.kr/ksl" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,20001305);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,20001305);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="이동철" src="http://myiweb.mju.ac.kr/upload/adm/aps/20100834.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 이동철</span>
+			<span>직 책 : 겸임교수</span>
+			<span>연락처 : </span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="profile_user.jsp?empId=20100834&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,20100834);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="이명호" src="http://myiweb.mju.ac.kr/upload/adm/aps/20040032.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 이명호</span>
+			<span>직 책 : 부교수</span>
+			<span>연락처 : 031-330-6783</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(20040032);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=20040032&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://home.mju.ac.kr/myunghol" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,20040032);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,20040032);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="장혁수" src="http://myiweb.mju.ac.kr/upload/adm/aps/19921310.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 장혁수</span>
+			<span>직 책 : 교수</span>
+			<span>연락처 : 031-330-6778</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(19921310);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=19921310&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://home.mju.ac.kr/jang-h" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,19921310);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="전종훈" src="http://myiweb.mju.ac.kr/upload/adm/aps/19951915.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 전종훈</span>
+			<span>직 책 : 교수</span>
+			<span>연락처 : 031-330-6441</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(19951915);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=19951915&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://ghost.mju.ac.kr" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,19951915);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="조세형" src="http://myiweb.mju.ac.kr/upload/adm/aps/20001302.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 조세형</span>
+			<span>직 책 : 교수</span>
+			<span>연락처 : 031-330-6779</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(20001302);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=20001302&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://old.mju.ac.kr/shcho" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,20001302);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,20001302);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="주우석" src="http://myiweb.mju.ac.kr/upload/adm/aps/19921307.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 주우석</span>
+			<span>직 책 : 교수</span>
+			<span>연락처 : 031-330-6438</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(19921307);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=19921307&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://cg.mju.ac.kr" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,19921307);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,19921307);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="최성운" src="http://myiweb.mju.ac.kr/upload/adm/aps/19931007.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 최성운</span>
+			<span>직 책 : 교수</span>
+			<span>연락처 : 031-330-6440</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(19931007);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=19931007&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://oos.mju.ac.kr" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,19931007);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,19931007);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="한승철" src="http://myiweb.mju.ac.kr/upload/adm/aps/20080029.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 한승철</span>
+			<span>직 책 : 조교수</span>
+			<span>연락처 : 031-330-6434</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(20080029);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=20080029&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://home.mju.ac.kr/bongbong" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,20080029);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,20080029);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+
+	<li>
+		<span class="pic"><img alt="홍석원" src="http://myiweb.mju.ac.kr/upload/adm/aps/19951352.gif" onerror="this.src='/mbs/mjukr/images/contents/noImg1.gif'"/></span>
+			<div class="txt">
+			<span>성 명 : 홍석원</span>
+			<span>직 책 : 교수</span>
+			<span>연락처 : 031-330-6777</span>
+		</div>
+		
+		<span class="bt">
+		
+		<a href="javascript:jf_email(19951352);"><img alt="E-mail" src="/mbs/mjukr/images/contents/btn_profs_email.gif" /></a>
+		
+		<a href="profile_user.jsp?empId=19951352&deptCd=12913" target="_blank"><img alt="상세보기" src="/mbs/mjukr/images/contents/btn_profs_detail.gif" /></a>
+		
+		<a href="http://ants.mju.ac.kr" target="_blank"><img alt="홈페이지" src="/mbs/mjukr/images/contents/btn_profs_home.gif" /></a>
+		
+		
+		<a href="javascript:jf_achievement(12913,19951352);"><img alt="연구업적" src="/mbs/mjukr/images/contents/btn_profs_history.gif" /></a>
+		
+		
+		<a href="javascript:jf_coursePlan(12913,19951352);"><img alt="강의계획서" src="/mbs/mjukr/images/contents/btn_profs_plan.gif" /></a>
+		
+		</span>
+	</li>
+	
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	        </div>
+	    </div>
+		
+		<!--containter-->
+
+
+ 		<!--footer-->
+	    <!--footer영역 시작-->
+		<div class="main_bottom_content"></div>	<div class="copyright">
+		<table width="300px" cellpadding="0" cellspacing="0" border="0">
+			<tr valign="top">
+				<P>명지대학교 컴퓨터공학과 웹프로그래밍 프로젝트.</P>
+				<P>Made by. 문규원 박남영 권순길 김가람</P>	
+				<P>Adress : (우)449-728 경기도 용인시 처인구 명지로 116(031)330-6114</P>
+				<p>Tel: 010-2373-6630</p>
+				<p>Email: k211191@nate.com
+				<p>Copyright ⓒ 2012 MYONGJI UNIV Student. All Rights Reserved.</p>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
+	

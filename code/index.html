@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>교수상담예약사이트</title>
-	<link type="text/css" href="css/main.css" rel="stylesheet"/>
+	<link type="text/css" href="css/index.css" rel="stylesheet"/>
 	<script src="scripts.js"></script>
 
 </style>
@@ -23,6 +23,21 @@ $(function() {
 		}
 	);
 	
+});
+
+$(function(){
+	$('.rollover').each(function(){
+		var a = $(this);
+		var img = a.find('img');
+		var src_off = img.attr('src');
+		var src_on = src_off.replace('_off','_on');
+		$('<img />').attr('src',src_on);
+		a.hover(function(){
+			img.attr('src',src_on);
+		},function(){
+			img.attr('src',src_off);
+		});
+	});
 });
 //-->
 </script>
@@ -58,7 +73,7 @@ $(function() {
 	                <param name="movie" value="../site/mju/images/main/flash/main2.swf" />
 	                <param name="quality" value="high" />
 	                <param name="wmode" value="transparent" />
-	                <embed src="image/main2.swf" quality="high" wmode="transparent" width="100%" height="430" name="onResize_example" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_kr" />
+	                <embed src="http://lib.mju.ac.kr/site/mju/images/main/flash/main4.swf" quality="high" wmode="transparent" width="100%" height="430" name="onResize_example" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_kr" />
 	            </object>
 	        </div>
 	        <!--//메인플래시이미지-->
@@ -72,10 +87,11 @@ $(function() {
 		    	<!--메뉴-->
 		    	<div class="navbar">
 	        		<ul>
-	        			<li class="navbar0"><a href=""><img src="image/btn_0_off.png" alt="공지사항" title="공지사항" class="hover" /></a></li>
-	        			<li class="navbar1"><a href=""><img src="image/btn_1_off.png" alt="교수소개" title="교수소개" class="hover" /></a></li>
-			        	<li class="navbar2"><a href=""><img src="image/btn_2_off.png" alt="상담예약" title="상담예약" class="hover" /></a></li>
-			        	<li class="navbar3"><a href=""><img src="image/btn_3_off.png" alt="예약확인" title="예약확인" class="hover" /></a></li>
+	        			<li><a href="index.html" class="rollover"><img src="image/btn_0_off.png" alt="Home" title="Home" class="hover" /></a></li>
+	        			<li><a href="index1.html" class="rollover"><img src="image/btn_0_off.png" alt="공지사항" title="공지사항" class="hover" /></a></li>
+	        			<li><a href="index2.html" class="rollover"><img src="image/btn_1_off.png" alt="교수소개" title="교수소개" class="hover" /></a></li>
+			        	<li><a href="index3.html" class="rollover"><img src="image/btn_2_off.png" alt="상담예약" title="상담예약" class="hover" /></a></li>
+			        	<li><a href="index4.html" class="rollover"><img src="image/btn_3_off.png" alt="예약확인" title="예약확인" class="hover" /></a></li>
 			        </ul>
 				</div>
 				<!--//메뉴-->
@@ -83,9 +99,9 @@ $(function() {
 				<!--//배너-->
 				<div class="linklist">
 	            	<ul>
-	                	<li><a href=""><img src="image/banner1.gif" alt="배너1" /></a></li>
-	                    <li><a href=""><img src="image/banner2.gif" alt="배너2" /></a></li>
-	                    <li class="last-child"><a href="" target="_blank"><img src="image/banner3.gif" alt="배너3" /></a></li>
+	                	<li><a href="http://www.mju.ac.kr/mbs/mjukr/index.jsp?SWIFT_SESSION_CHK=false" target="_blank"><img src="image/banner1.gif" alt="명지대학교 바로가기" /></a></li>
+	                    <li><a href="http://cs.mju.ac.kr/" target="_blank"><img src="image/banner2.gif" alt="컴퓨터공학과 바로가기" /></a></li>
+	                    <li class="last-child"><a href="http://lib.mju.ac.kr/index.jsp" target="_blank"><img src="image/banner3.gif" alt="명지대도서관 바로가기" /></a></li>
 	                </ul>
 	            </div>
 	        </div>
@@ -147,42 +163,39 @@ $(function() {
 			        		클릭 몇번으로 누구나 쉽고 간편하게 당신의 고민을 해결해보아요.
 			        	</h3>
 			        </p>
-			        </div>
-		    </div>
+			    </div>
+			</div>
 		</div>
-	    <div id="section3">
-	    	<a href=""><h1>	|교수페이지 바로가기</h1></a><br/>
-	    	<div id="image_list">
-				<div class="clsBannerScreen">
-					<div class="images" style="display:block"><a href=""><img src="image/1.gif" /><a></div>
-					<div class="images"><a href=""><img src="image/2.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/3.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/4.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/5.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/6.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/7.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/8.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/9.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/10.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/11.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/12.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/13.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/14.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/15.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/16.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/17.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/18.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/19.gif" /></a></div>
-					<div class="images"><a href=""><img src="image/20.gif" /></a></div>
-
+		    <div id="section3">
+		    	<a href=""><h1>	|교수페이지 바로가기</h1></a><br/>
+		    	<div id="image_list">
+					<div class="clsBannerScreen">
+						<div class="images" style="display:block"><a href=""><img src="image/1.gif" /><a></div>
+						<div class="images"><a href=""><img src="image/2.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/3.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/4.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/5.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/6.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/7.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/8.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/9.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/10.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/11.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/12.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/13.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/14.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/15.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/16.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/17.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/18.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/19.gif" /></a></div>
+						<div class="images"><a href=""><img src="image/20.gif" /></a></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-
-
-	    <!--containter-->
+		<!--containter-->
 
 
 	    <!--footer-->

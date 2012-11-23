@@ -1,0 +1,90 @@
+/* main */
+html{color:#000;
+	background:#FFF; 
+	padding:0;
+	font: 12px/18px "맑은 고딕", "Malgun Gothic", "굴림", "Gulim", Verdana, Arial, Tahoma;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+legend{color:#000;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{font-size:100%;}
+body {height:100%;margin:0;padding:0}
+
+/* Basic */
+h1 {font-size:14px; line-height:28px; font-weight:bold;}
+h2 {font-size:12px; line-height:24px; font-weight:bold;}
+a:visited, a:link {color:#c20A00;text-decoration:none;}
+a:hover, a:active {color:#C23700;}
+
+#wrap {width:100%;margin:0;padding:0}
+
+/* header */
+#header {position:relative;width:100%;height:440px;min-height:440px;}
+
+/* header- */
+#header .header_area {position:absolute;left:50%;width:960px;margin-left:-480px;z-index:99;}
+#header .header_area .logo {float:left;padding:10px 0 0 0;} /* header-logo */
+#header .header_area #login_main {position:absolute;right:0;width:450px;text-align:right;margin-top:15px;}/* top_smenu */
+
+#header .top_area {position:absolute;float:left;width:960px;z-index:99;}
+
+/* header-메인플래시 */
+#fullscreen {width:100%;z-index:0;}
+#fullscreen .main_visual {position:absolute;top:0;left:0;width:100%;z-index:0;}
+
+
+/* containter */
+#container {overflow:auto;position:relative;width:960px;margin:0 auto;margin-top:0px;margin-top:0px;margin-bottom:15px;z-index:10;}
+#container  {*zoom:1;} /* IE5.5~7 브라우저 대응 Hack */
+#container:after {content:" "; display:block; clear:both;} /* 표준계열 브라우저에 대응하는 float 해제용 가상 엘리먼트의 생성 */ 
+
+
+
+/* copyright */
+div.copyright {
+	background-color:#EBF7FF;
+	color:#747474;
+	margin-top: 0px;
+	border-top: 1px #454445 solid;
+	padding: 20px 0;
+	text-align:center;
+}
+
+
+/* section */
+#section1 {float:left;width:200px;margin-right:40px;overflow:hidden;}
+#section2 {float:left;width:675px;margin-right:25px;overflow:hidden;}
+
+
+/* 공지사항 */
+#tabWrap {position:relative;float:left; width:447px;height:162px;margin-bottom:20px}
+/* 메인탭*/
+.tab {overflow:hidden; width:447px;margin:0px 0 3px 0;background:url(image/bar_3x1h_e6e6e6.gif) repeat-x left bottom;}
+.tab li {float:left;}		
+/* 탭리스트*/
+#tabWrap img {vertical-align:top;}
+#tabWrap ul.noticelist {clear:both; overflow:hidden; width:100%; } /* 리스트 */
+#tabWrap ul.noticelist li {float:left; width:435px; padding:6px 0 6px 12px;background:url(image/dot_2x2h_a8a8a8.gif) left 10px no-repeat;border-bottom:1px solid #e6e6e6}
+#tabWrap ul.noticelist li a {float:left;color:#666666;}
+#tabWrap ul.noticelist li span {float:right; font-size:0.92em;color:#8d8d8d;}
+#tabWrap ul.noticelist li img {vertical-align:top;padding-top:2px}
+#tabWrap p {position:absolute;top:5px; right:0; margin:0 0 12px 0; padding:0; text-align:right;} /* 버튼 */
+#tabWrap p a {display:block; padding:5px 0;}
+
+
+
+.clsBannerScreen {overflow: hidden;position: relative;height: 130px;width: 120px; cursor:pointer; clear:both;}
+.clsBannerScreen .images {position:absolute; display:none; }
+
+
