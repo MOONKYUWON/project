@@ -52,7 +52,9 @@ a:hover, a:active {color:#C23700;}
 
 
 /* copyright */
-div.copyright {
+#copyright {
+	width:auto;
+	height:auto;
 	background-color:#EBF7FF;
 	color:#747474;
 	margin-top: 0px;
@@ -60,6 +62,7 @@ div.copyright {
 	padding: 20px 0;
 	text-align:center;
 }
+
 
 
 /* section */
