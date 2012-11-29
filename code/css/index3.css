@@ -42,11 +42,13 @@ a:hover, a:active {color:#C23700;}
 /* header-메인플래시 */
 #fullscreen {width:100%;z-index:0;}
 #fullscreen .main_visual {position:absolute;top:0;left:0;width:100%;z-index:0;}
-
+#onResize_example{
+	width:100%; height:430px; position:center;
+}
 
 /* containter */
 #container {overflow:auto;position:relative;width:960px;margin:0 auto;margin-top:0px;margin-top:0px;margin-bottom:15px;z-index:10;}
-#container  {*zoom:1;} /* IE5.5~7 브라우저 대응 Hack */
+/*#container  {*zoom:1;}  IE5.5~7 브라우저 대응 Hack */
 #container:after {content:" "; display:block; clear:both;} /* 표준계열 브라우저에 대응하는 float 해제용 가상 엘리먼트의 생성 */ 
 
 
