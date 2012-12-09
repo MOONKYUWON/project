@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE sqlMapConfig      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+    
+<sqlMapConfig>
+<!-- properties settings transactionmanager 순서 지켜야함 -->
+
+	<!-- DB연결 properties사용하기 -->
+	<properties resource="dbconnect.properties"/>
+
+	<!-- dataSource를 DBCP를 이용했을 때 환경 설정 -->
+	<settings 
+    useStatementNamespaces="true"
+    cacheModelsEnabled="true" 
+    enhancementEnabled="true"
+    lazyLoadingEnabled="true" 
+    maxRequests="32" 
+    maxSessions="10" 
+    maxTransactions="5" 
+    />
+
+	<!-- DB연결을 위한 환경 설정 -->	
+	<transactionManager type="JDBC">
+		<dataSource type="DBCP"><!-- or SIMPLE(commons파일두개 없어도 됨) -->
+			<property name="JDBC.Driver" value="${driver}"/> 
+			<property name="JDBC.ConnectionURL" value="${url}"/>
+			<property name="JDBC.Username" value="${username}"/>
+			<property name="JDBC.Password" value="${userpass}"/>
+			<property name="JDBC.DefaultAutoCommit" value="false"/>			
+		</dataSource>
+	</transactionManager>
+	
+	<!-- Mapper 등록(CRUD를 작성한 xml문서) -->
+	<sqlMap resource="common.xml"/> 
+</sqlMapConfig>

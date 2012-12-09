@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+ <sqlMap>   
+<select id="getUserList"  resultClass="com.model.UserModel" >
+SELECT A.USER_ID,
+       A.USER_PASS,
+       A.USER_ROLE,
+       A.PHONE_NUMBER,
+       A.USER_NAME,
+       A.USER_EMAIL
+  FROM BASE_USER A
+ </select>
+
+<select id="getUserInfo"  parameterClass="String" resultClass="com.model.UserModel" >
+SELECT A.USER_ID,
+       A.USER_PASS,
+       A.USER_ROLE,
+       A.PHONE_NUMBER,
+       A.USER_NAME,
+       A.USER_EMAIL
+  FROM BASE_USER A
+  WHERE
+  	A.USER_ID = #user_id#
+ </select>
+ 
+<select id="getSchList"  resultClass="com.model.SchModel" > 
+SELECT A.USER_ID,
+		B.USER_NAME
+  FROM COUNSEL_SCHDINFO A
+  INNER JOIN BASE_USER B
+  ON A.USER_ID = B.USER_ID
+  GROUP BY A.USER_ID, B.USER_NAME
+  </select>
+  
+  <insert id="insertSchDefail" parameterClass="com.model.SchDetailModel">
+  INSERT INTO COUNSEL_SCHDINFO ( USER_ID,AVAIL_DAY,START_TIME,END_TIME,SCHD_SEQ,INSERT_USER,INSERT_TIME,UPDATE_USER,UPDATE_TIME )
+VALUES (#user_id#, #avail_day#, #start_time#, #end_time#, #schd_seq#, #insert_user#, #insert_time#, #update_user#, #update_time#)
+</insert>
+<select id="getSchDetailList"  parameterClass="String" resultClass="com.model.SchDetailModel" >
+    SELECT A.USER_ID,
+       A.COUNSEL_DATE COUNSEL_DATE,
+       A.COUNSEL_STARTTIME,
+       A.APPLY_ID ,
+       (SELECT B.USER_NAME FROM BASE_USER B WHERE A.APPLY_ID = B.USER_ID) AS APPLY_USERNAME,
+       A.COUNSEL_ENDTIME
+  FROM COUNSEL_SCHDETAIL A
+  WHERE
+  	A.USER_ID = #user_id#
+  </select>
+  
+<select id="getUserPass"  parameterClass="String" resultClass="String" >
+    SELECT A.USER_PASS
+	FROM 
+		BASE_USER A
+	WHERE
+  		A.USER_ID = #user_id#
+  </select>
+  
+  <select id="getDbUserId"  parameterClass="String" resultClass="String" >
+    SELECT A.USER_ID
+	FROM 
+		BASE_USER A
+	WHERE
+  		A.USER_ID = #user_id#
+  </select>
+  
+  <select id="countSearchId"  parameterClass="String" resultClass="Integer" >
+    SELECT COUNT(*)
+	FROM 
+		BASE_USER A
+	WHERE
+  		A.USER_ID = #user_id#
+  </select>
+  
+  <insert id="insertNetschUser"  parameterClass="com.model.UserModel">
+    INSERT INTO BASE_USER ( USER_ID,USER_PASS,USER_ROLE,PHONE_NUMBER,USER_NAME,USER_EMAIL)
+VALUES (#user_id#, #user_pass#, #user_role#, #phone_number# , #user_name#, #user_email#)
+  </insert>
+  
+    <insert id="insertProfSch"  parameterClass="com.model.SchModel">
+INSERT INTO COUNSEL_SCHDINFO ( USER_ID,AVAIL_DAY,START_TIME,END_TIME,SCHD_SEQ )
+VALUES (#user_id# , #avail_day#,#start_time#,#end_time#, schd_seq.NEXTVAL )
+  </insert>
+
+  <select id="getProfSch"  parameterClass="String" resultClass="com.model.SchModel" >
+SELECT A.USER_ID,
+       A.AVAIL_DAY,
+       A.START_TIME,
+       A.END_TIME,
+       A.SCHD_SEQ
+  FROM COUNSEL_SCHDINFO A
+  WHERE
+  	A.USER_ID = #user_id#
+  </select>
+  
+      <delete id="deleteProfSch"  parameterClass="String">
+DELETE COUNSEL_SCHDINFO 
+WHERE USER_ID = #user_id#
+  </delete>
+
+<select id="getAvailDay" parameterClass="String" resultClass="com.model.SchModel">
+SELECT A.USER_ID,
+       DECODE(A.AVAIL_DAY, 'MON', 1, 'TUE', 2, 'WED', 3, 'THU', 4, 'FRI', 5, 'SAT', 6, 'SUN', 0) AVAIL_DAY
+  FROM COUNSEL_SCHDINFO A
+  WHERE A.USER_ID = #user_id#
+    GROUP BY A.USER_ID, A.AVAIL_DAY
+</select>
+
+<select id="searchReserve" parameterClass="com.model.SchDetailModel" resultClass="com.model.SchDetailModel">
+SELECT A.USER_ID,
+       A.COUNSEL_DATE,
+       A.COUNSEL_STARTTIME,
+       A.APPLY_ID,
+				B.USER_NAME,
+       A.COUNSEL_ENDTIME
+  FROM COUNSEL_SCHDETAIL A
+  INNER JOIN BASE_USER B ON A.APPLY_ID = B.USER_ID
+  WHERE A.USER_ID = #user_id#
+  AND A.COUNSEL_DATE = REPLACE(#counsel_date#, '-', '') 
+  </select>
+  
+  
+  <select id="getSchInfoByAvail" parameterClass="com.model.SchModel" resultClass="com.model.SchModel">
+SELECT A.USER_ID,
+       A.AVAIL_DAY,
+       A.START_TIME,
+       A.END_TIME,
+       A.SCHD_SEQ
+  FROM COUNSEL_SCHDINFO A
+  WHERE
+  USER_ID = #user_id#
+  AND
+  <dynamic>
+  	<isEqual property="avail_day" compareValue="1">
+  AVAIL_DAY = 'MON'
+  </isEqual>
+  	<isEqual property="avail_day" compareValue="2">
+  AVAIL_DAY = 'TUE'
+  </isEqual>
+    	<isEqual property="avail_day" compareValue="3">
+  AVAIL_DAY = 'WED'
+  </isEqual>
+    	<isEqual property="avail_day" compareValue="4">
+  AVAIL_DAY = 'THU'
+  </isEqual>
+    	<isEqual property="avail_day" compareValue="5">
+  AVAIL_DAY = 'FRI'
+  </isEqual>
+  </dynamic>
+  </select>
+  
+  
+      <insert id="insertSchDetail"  parameterClass="com.model.SchDetailModel">
+INSERT INTO COUNSEL_SCHDETAIL ( USER_ID,COUNSEL_DATE,COUNSEL_STARTTIME,APPLY_ID,COUNSEL_ENDTIME )
+VALUES (#user_id#, REPLACE(#counsel_date#, '-', '') , #counsel_starttime#, #apply_id#, #counsel_endtime# )
+  </insert>
+
+
+<select id="listReservInfo" parameterClass="String" resultClass="com.model.SchDetailModel">
+SELECT A.USER_ID,
+			B.USER_NAME,
+       A.COUNSEL_DATE,
+       A.COUNSEL_STARTTIME,
+       A.APPLY_ID,
+       A.COUNSEL_ENDTIME
+  FROM COUNSEL_SCHDETAIL A
+  INNER JOIN BASE_USER B ON A.USER_ID = B.USER_ID
+  WHERE APPLY_ID = #user_id#
+  </select>  
+
+<select id="checkReservInfo" parameterClass="String" resultClass="com.model.SchDetailModel">
+SELECT A.USER_ID,
+			B.USER_NAME,
+       A.COUNSEL_DATE,
+       A.COUNSEL_STARTTIME,
+       A.APPLY_ID,
+       A.COUNSEL_ENDTIME
+  FROM COUNSEL_SCHDETAIL A
+  INNER JOIN BASE_USER B ON A.APPLY_ID = B.USER_ID
+  WHERE A.USER_ID = #user_id#
+  </select>
+  
+ </sqlMap>
